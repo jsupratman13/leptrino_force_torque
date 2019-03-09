@@ -3,5 +3,13 @@
   <node pkg="leptrino_force_torque" type="leptrino_force_torque" name="leptrino_force_torque" output="screen">
   	<param name="com_port" value="$(arg comport)" />  	  	
   </node>
+
+  <!--
+  <arg name="model" default="$(find leptrino_force_torque)/urdf/FFS055YA501U6.xacro" />
+  <param name="robot_description" command="$(find xacro)/xacro.py $(arg model)" />
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find leptrino_force_torque)/launch/??.rviz" />
+  -->
 </launch>  
  

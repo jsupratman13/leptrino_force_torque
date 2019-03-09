@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+   
+    <joint name="base_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="sensor" />
+    </joint>
+    
+    <link name="base_link" />
+    <link name="ffs055ya501u6_link">
+        <inertial>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://leptrino_force_torque/meshes/FFS055YA501U6.stl" />
+            </geometry>
+            <material name="grey"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://leptrino_force_torque/meshes/FFS055YA501U6.stl" />
+            </geometry>
+        </collision>
+    </link>
+
+</robot>
+
