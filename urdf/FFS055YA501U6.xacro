@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <robot name="FFS055YA501U6" xmlns:xacro="http://www.ros.org/wiki/xacro"> 
    
-    <joint name="base_joint" type="fixed">
+    <joint name="leptrino_joint" type="fixed">
         <origin xyz="0 0 0" rpy="0 0 0" />
         <parent link="base_link" />
-        <child link="sensor_link" />
+        <child link="leptrino" />
     </joint>
     
     <link name="base_link" />
-    <link name="sensor_link">
+    <link name="leptrino">
         <visual>
             <origin xyz="0 0 -0.01" rpy="1.57079 0 0" />
             <geometry>
